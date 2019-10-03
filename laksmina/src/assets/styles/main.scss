@@ -2093,9 +2093,9 @@ ul {
 		overflow: auto;
 		background-color: $color_gallery_approx;
 		> li {
-			&:first-child {
-				margin-bottom: 40px;
-			}
+			// &:first-child {
+			// 	margin-bottom: 40px;
+			// }
 			> ul > li {
 				//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 				transition: all 0.4s;
@@ -2105,7 +2105,16 @@ ul {
 			&:hover > ul > li {
 				height: 70px;
 			}
-			&:not(:first-child) a {
+			// &:not(:first-child) a {
+			// 	display: block;
+			// 	padding: 20px 0;
+			// 	border-bottom: 1px solid $color_silver_chalice_approx;
+			// 	&:hover {
+			// 		border-color: $color_tundora_approx;
+			// 	}
+			// }
+
+			a {
 				display: block;
 				padding: 20px 0;
 				border-bottom: 1px solid $color_silver_chalice_approx;
@@ -6340,3 +6349,42 @@ ul {
     margin: 10px 0 0 20px;
     list-style: circle;
 }
+
+.partners {
+	background: #ffffff;
+	padding: 6px 0;
+	text-align: right;
+	border-bottom: 1px solid #f1f1f1;
+	}
+
+.container-partners {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+	max-width: 1520px;
+	padding: 10px 0; 
+}
+
+
+.partners-wrap {
+    float: right;
+}
+
+.partners span {
+    display: inline-block;
+}
+
+.partners ul {
+    display: inline-block;
+}
+
+.partners li {
+
+	display:inline-block;
+}
+	
+.partners img {
+	max-width :  100px;
+	height: auto;
+};
