@@ -3245,7 +3245,8 @@ ul {
   font-family: Raleway, serif;
   font-weight: 400;
   letter-spacing: 1.6px;
-  font-size: 18px; }
+  font-size: 14px;
+  }
   .shop-tab-controler:before {
     content: " ";
     position: absolute;
@@ -3258,9 +3259,10 @@ ul {
   .shop-tab-controler li {
     display: inline-block;
     padding: 5px 30px;
-    margin: 0 5%;
+    margin: 0 2%;
     background-color: #ffffff;
-    line-height: 50px; }
+    line-height: 50px;
+    }
     .shop-tab-controler li a {
       transition: color 0.4s; }
       .shop-tab-controler li a:hover {
