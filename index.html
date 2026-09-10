@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robertas</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #050505;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        .glowing-text {
+            color: #ffffff;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-align: center;
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.7),
+                0 0 10px rgba(255, 255, 255, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.8),
+                0 0 40px rgba(0, 255, 255, 0.6),
+                0 0 80px rgba(0, 255, 255, 0.4);
+            animation: pulse 2.5s ease-in-out infinite alternate;
+        }
+        @keyframes pulse {
+            from {
+                text-shadow: 
+                    0 0 5px rgba(255, 255, 255, 0.6),
+                    0 0 10px rgba(255, 255, 255, 0.4),
+                    0 0 20px rgba(0, 255, 255, 0.6),
+                    0 0 30px rgba(0, 255, 255, 0.4);
+            }
+            to {
+                text-shadow: 
+                    0 0 10px rgba(255, 255, 255, 0.9),
+                    0 0 20px rgba(255, 255, 255, 0.7),
+                    0 0 30px rgba(0, 255, 255, 1),
+                    0 0 50px rgba(0, 255, 255, 0.8),
+                    0 0 100px rgba(0, 255, 255, 0.6);
+            }
+        }
+        @media (max-width: 600px) {
+            .glowing-text {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glowing-text">Hi, my name is Robertas.</div>
+</body>
+</html>
